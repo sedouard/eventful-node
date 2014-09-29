@@ -61,6 +61,12 @@ client.searchEvents({ keywords: 'music' }, function(err, data){
 
 # Building
 
+This library is built and tested using [gruntjs](http://gruntjs.com). Be sure to have the grunt command line interface (cli) installed globally on your machine:
+
+```bash
+npm install grunt-cli -g
+```
+
 To build eventful-node, fork or clone this repository and do:
 
 ```bash
