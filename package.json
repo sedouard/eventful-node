@@ -1,0 +1,17 @@
+{
+  "name": "eventful-node",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./lib/eventful-node.js",
+  "dependencies": {
+    "grunt-contrib-uglify": "^0.6.0",
+    "unirest": "^0.2.7",
+    "xml2js": "^0.4.4"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-mocha-test": "^0.12.0",
+    "grunt-typescript": "^0.3.8",
+    "mocha": "^1.21.4"
+  }
+}
