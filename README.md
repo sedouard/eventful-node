@@ -64,6 +64,7 @@ client.searchEvents({ keywords: 'music' }, function(err, data){
 This library is built and tested using [gruntjs](http://gruntjs.com). Be sure to have the grunt command line interface (cli) installed globally on your machine:
 
 ```bash
+# On some systems, you may need to run this command with sudo
 npm install grunt-cli -g
 ```
 
