@@ -105,8 +105,10 @@ grunt test
 
 This library is written in [typescript](http://typescriptlang.org) and as such contributions must be made in typescript. To make things easier, you can start this grunt watch task which will automatically validate and compile your typescript from ./src/eventful-node.ts to javascript in ./lib/eventful-node.js.
 
-Please check the issues tab with 'help wanted' issues to contribute.
 
 ```bash
 grunt watch
 ```
+
+Please check the issues tab with 'help wanted' issues to contribute.
+
