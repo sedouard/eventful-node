@@ -83,8 +83,20 @@ This will compile the [typescript](http://typescriptlang.org) into javascript, m
 
 To run the associated unit tests do:
 
+Unix/Linux
+
 ```bash
+
+export API_KEY=<YOUR_EVENTFUL_API_KEY>
 grunt test
+
+```
+
+```batch
+
+set API_KEY=<YOUR_EVENTFUL_API_KEY>
+grunt test
+
 ```
 
 # Contributing
