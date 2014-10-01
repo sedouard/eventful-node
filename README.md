@@ -77,7 +77,7 @@ grunt
 
 ```
 
-This will compile the [typescript](http://typescriptlang.org) into javascript, minify it and place it in the ./lib folder.
+This will compile the [typescript](http://typescriptlang.org) into javascript, minify it and place it in the ./bin folder.
 
 # Testing
 
@@ -103,7 +103,7 @@ grunt test
 
 # Contributing
 
-This library is written in [typescript](http://typescriptlang.org) and as such contributions must be made in typescript. To make things easier, you can start this grunt watch task which will automatically validate and compile your typescript into javascript.
+This library is written in [typescript](http://typescriptlang.org) and as such contributions must be made in typescript. To make things easier, you can start this grunt watch task which will automatically validate and compile your typescript from ./src/eventful-node.ts to javascript in ./lib/eventful-node.js.
 
 Please check the issues tab with 'help wanted' issues to contribute.
 
