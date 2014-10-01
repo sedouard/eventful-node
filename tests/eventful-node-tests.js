@@ -7,8 +7,9 @@ var client = new eventful.Client(process.env.API_KEY);
 ///////////////////////////////////////////////////////////////////////////////
 describe('eventful-node', function(){
   describe('#searchEvents()', function(){
-    it('should return a list of events with at lest 1 recipe', function(done){
+    it('should return a list of events with at lest 1 event', function(done){
       
+      console.log('using API_KEY ' + process.env.API_KEY);
       client.searchEvents({
         keywords: 'music'
       }, function(err, data){
@@ -16,7 +17,12 @@ describe('eventful-node', function(){
         assert.equal(true, (err == null));
         
         //basic check, see if we have any events
+        console.log('fetched ' + data.search.total_items + ' events ' );
         assert.equal(true, data.search.total_items > 0);
+        
+        for(var i in data.search.events[i]){
+          assert.equal(true, data.search.events[i].title != null);
+        }
         done();
       });
     })
