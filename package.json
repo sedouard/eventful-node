@@ -1,22 +1,22 @@
 {
     "name": "eventful-node",
     "description": "super thin eventful client api library",
-    "version": "1.0.1",
-    "main": "./lib/eventful-node.js",
+    "version": "1.0.2",
+    "main": “bin/eventful-node",
     "directories": {
-        "test": "tests"
+        "src": "./src"
     },
     "author": {
-        "name": "Steven Edouard",
+        "name": "StevenEdouard",
         "email": "sedouard@microsoft.com"
     },
     "dependencies": {
         "unirest": "^0.2.7",
         "xml2js": "^0.4.4"
     },
-    "license": "Apache 2.0",
+    "license": "Apache2.0",
     "bugs": {
-        "url": "https://github.com/sedouard/eventful-node/issues"
+        "url": "https: //github.com/sedouard/eventful-node/issues"
     },
     "devDependencies": {
         "grunt": "^0.4.5",
