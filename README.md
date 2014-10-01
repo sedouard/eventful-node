@@ -44,14 +44,14 @@ client.searchEvents({ keywords: 'music' }, function(err, data){
   
   }
   
-  console.log('Recieved ' + data.total_items + ' events');
+  console.log('Recieved ' + data.search.total_items + ' events');
   
   console.log('Event listings: ');
   
   //print the title of each event
   for(var i in data.events){
   
-    console.log(data.events[i].title);
+    console.log(data.search.events[i].title);
   
   }
 
