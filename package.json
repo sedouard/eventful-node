@@ -2,7 +2,7 @@
     "name": "eventful-node",
     "description": "super thin eventful client api library",
     "version": "1.0.2",
-    "main": “bin/eventful-node",
+    "main": "bin/eventful-node",
     "directories": {
         "src": "./src"
     },
