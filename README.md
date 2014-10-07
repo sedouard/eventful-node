@@ -49,7 +49,7 @@ client.searchEvents({ keywords: 'music' }, function(err, data){
   console.log('Event listings: ');
   
   //print the title of each event
-  for(var i in data.events){
+  for(var i in data.search.events){
   
     console.log(data.search.events[i].title);
   
