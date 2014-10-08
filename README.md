@@ -1,11 +1,12 @@
 eventful-node
 =============
+![BuildStatus](https://travis-ci.org/sedouard/eventful-node.svg?branch=master)
 
 A simple client library for the Eventful API for event searching. (http://api.eventful.com)
 
 # Getting Started
 
-(In the near future you will be able to) Do:
+To install do:
 
 ```bash
 
