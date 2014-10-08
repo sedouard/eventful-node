@@ -1,6 +1,6 @@
 /// <reference path="../lib/eventful-node.d.ts"/>
 var assert = require("assert");
-var eventful = require('../lib/eventful-node.js');
+var eventful = require('../bin/eventful-node');
 var client = new eventful.Client(process.env.API_KEY);
 ////////////////////////////////////////////////////////////////////////////////
 //Sample tests for Continuous Integration for the data source
