@@ -64,7 +64,12 @@ client.searchEvents({ keywords: 'music' }, function(err, data){
 ```js
   
   client.listCategories(function(err, data){
-
+    
+    if(err){
+    
+      return console.error(err);
+    
+    }
     for(var i in data){
       console.log('Available event categories: ');
       console.log('id:' + data[i].id);
