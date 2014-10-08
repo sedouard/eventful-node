@@ -2,6 +2,7 @@
 var assert = require("assert");
 var eventful = require('../bin/eventful-node');
 var client = new eventful.Client(process.env.API_KEY);
+var apiKeyMessage = "Must set the environment variable API_KEY with your eventful API key";
 ////////////////////////////////////////////////////////////////////////////////
 //Sample tests for Continuous Integration for the data source
 ///////////////////////////////////////////////////////////////////////////////
@@ -9,7 +10,7 @@ describe('eventful-node', function(){
   describe('#searchEvents()', function(){
     it('should return a list of events with at lest 1 event', function(done){
       
-      console.log('using API_KEY ' + process.env.API_KEY);
+      assert.equal(true, process.env.API_KEY != null, apiKeyMessage);
       client.searchEvents({
         keywords: 'music'
       }, function(err, data){
@@ -31,7 +32,7 @@ describe('eventful-node', function(){
   describe("#listCategories", function (){
     it('should return a list of categories', function(done){
     
-      console.log('using API_KEY ' + process.env.API_KEY);
+      assert.equal(true, process.env.API_KEY != null, apiKeyMessage);
     
       client.listCategories(function(err, data){
         console.log(err);
