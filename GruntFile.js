@@ -60,6 +60,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['typescript:compile', 'uglify']);
 	//test
 	grunt.registerTask('test', ['mochaTest']);
+	//continuous integration
+	grunt.registerTask('ci', ['typescript:compile', 'uglify', 'mochaTest']);
 	//live compile - for development
 	grunt.registerTask('watch', ['typescript:watch']);
 }

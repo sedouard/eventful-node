@@ -6,6 +6,9 @@
     "directories": {
         "src": "./src"
     },
+    "scripts": {
+        "test": "grunt ci"
+    },
     "author": {
         "name": "StevenEdouard",
         "email": "sedouard@microsoft.com"
