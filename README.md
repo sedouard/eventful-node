@@ -96,6 +96,7 @@ To build eventful-node, fork or clone this repository and do:
 npm install --dev
 grunt
 
+
 ```
 
 This will compile the [typescript](http://typescriptlang.org) into javascript, minify it and place it in the ./bin folder.
@@ -123,6 +124,8 @@ grunt test
 ```
 
 # Contributing
+
+You can find the latest build status [here](https://travis-ci.org/sedouard/eventful-node/builds)
 
 This library is written in [typescript](http://typescriptlang.org) and as such contributions must be made in typescript. To make things easier, you can start this grunt watch task which will automatically validate and compile your typescript from ./src/eventful-node.ts to javascript in ./lib/eventful-node.js.
 
