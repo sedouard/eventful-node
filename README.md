@@ -2,7 +2,7 @@ eventful-node
 =============
 ![BuildStatus](https://travis-ci.org/sedouard/eventful-node.svg?branch=master)
 
-A simple client library for the Eventful API for event searching. (http://api.eventful.com)
+A simple client library for the Eventful API for event searching. (http://api.eventful.com). This library is a very limited subset of the Eventful API and does not include any authenitcation-required APIs.
 
 # Getting Started
 
