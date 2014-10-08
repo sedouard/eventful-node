@@ -7,7 +7,7 @@
         "src": "./src"
     },
     "scripts": {
-        "test": "nodejs node_modules/lib/grunt/grunt.js ci"
+        "test": "node node_modules/lib/grunt/grunt.js ci"
     },
     "author": {
         "name": "StevenEdouard",
