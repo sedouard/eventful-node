@@ -44,14 +44,14 @@ client.searchEvents({ keywords: 'music' }, function(err, data){
   
   }
   
-  console.log('Recieved ' + data.total_items + ' events');
+  console.log('Recieved ' + data.search.total_items + ' events');
   
   console.log('Event listings: ');
   
   //print the title of each event
-  for(var i in data.events){
+  for(var i in data.search.events){
   
-    console.log(data.events[i].title);
+    console.log(data.search.events[i].title);
   
   }
 
@@ -92,22 +92,38 @@ grunt
 
 ```
 
-This will compile the [typescript](http://typescriptlang.org) into javascript, minify it and place it in the ./lib folder.
+This will compile the [typescript](http://typescriptlang.org) into javascript, minify it and place it in the ./bin folder.
 
 # Testing
 
 To run the associated unit tests do:
 
+Unix/Linux:
+
 ```bash
+
+export API_KEY=<YOUR_EVENTFUL_API_KEY>
 grunt test
+
+```
+
+Windows:
+
+```batch
+
+set API_KEY=<YOUR_EVENTFUL_API_KEY>
+grunt test
+
 ```
 
 # Contributing
 
-This library is written in [typescript](http://typescriptlang.org) and as such contributions must be made in typescript. To make things easier, you can start this grunt watch task which will automatically validate and compile your typescript into javascript.
+This library is written in [typescript](http://typescriptlang.org) and as such contributions must be made in typescript. To make things easier, you can start this grunt watch task which will automatically validate and compile your typescript from ./src/eventful-node.ts to javascript in ./lib/eventful-node.js.
 
-Please check the issues tab with 'help wanted' issues to contribute.
 
 ```bash
 grunt watch
 ```
+
+Please check the issues tab with 'help wanted' issues to contribute.
+

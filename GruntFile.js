@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 	      build: {
 	        //specifies source file(s) and destination.
 	        src: 'lib/eventful-node.js',
-	        dest: 'lib/eventful-node.min.js'
+	        dest: ‘bin/eventful-node’
 	      }
     	}
 		
