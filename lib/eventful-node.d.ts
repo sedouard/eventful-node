@@ -28,11 +28,16 @@ declare module eventful {
         search_time: number;
         events: any[];
     }
+    interface categoryResult {
+        id: string;
+        name: string;
+    }
     class Client {
         private app_key;
         private base_url;
         constructor(key: string);
         public searchEvents(options: searchEventOptions, callback: (err: any, data: searchEventResults) => void): void;
+        public listCategories(callback: (err: any, data: categoryResult[]) => void): void;
     }
 }
 export = eventful;

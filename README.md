@@ -59,6 +59,21 @@ client.searchEvents({ keywords: 'music' }, function(err, data){
 
 ```
 
+## Getting Possible Event Cateogires
+
+```js
+  
+  client.listCategories(function(err, data){
+
+    for(var i in data){
+      console.log('Available event categories: ');
+      console.log('id:' + data[i].id);
+      console.log('id:' + data[i].name);
+    }
+  });
+  
+```
+
 # Building
 
 This library is built and tested using [gruntjs](http://gruntjs.com). Be sure to have the grunt command line interface (cli) installed globally on your machine:

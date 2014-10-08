@@ -27,4 +27,26 @@ describe('eventful-node', function(){
       });
     })
   })
+  
+  describe("#listCategories", function (){
+    it('should return a list of categories', function(done){
+    
+      console.log('using API_KEY ' + process.env.API_KEY);
+    
+      client.listCategories(function(err, data){
+        console.log(err);
+        assert.equal(true, (err == null));
+        console.log(data);
+        for(var i in data){
+          console.log('Available event categories: ');
+          console.log('id:' + data[i].id);
+          console.log('id:' + data[i].name);
+          assert.equal(true, data[i].id != null);
+          assert.equal(true, data[i].name != null);
+        }
+        done();
+      });
+    
+    });
+  });
 })
