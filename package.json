@@ -11,7 +11,7 @@
   },
   "author": {
     "name": "StevenEdouard",
-    "email": "sedouard@microsoft.com"
+    "email": "steven.edouard1@gmail.com"
   },
   "dependencies": {
     "unirest": "^0.2.7",
@@ -19,7 +19,7 @@
   },
   "license": "Apache2.0",
   "bugs": {
-    "url": "https: //github.com/sedouard/eventful-node/issues"
+    "url": "https://github.com/sedouard/eventful-node/issues"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
