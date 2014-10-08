@@ -6,6 +6,11 @@
   "directories": {
     "src": "./src"
   },
+  "homepage": "https://github.com/sedouard/eventful-node",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sedouard/eventful-node"
+  },
   "scripts": {
     "test": "node node_modules/grunt-cli/bin/grunt ci"
   },
