@@ -9,18 +9,18 @@ var apiKeyMessage = "Must set the environment variable API_KEY with your eventfu
 describe('eventful-node', function(){
   describe('#searchEvents()', function(){
     it('should return a list of events with at lest 1 event', function(done){
-      
+
       assert.equal(true, process.env.API_KEY != null, apiKeyMessage);
       client.searchEvents({
         keywords: 'music'
       }, function(err, data){
-      
+
         assert.equal(true, (err == null));
-        
+
         //basic check, see if we have any events
         console.log('fetched ' + data.search.total_items + ' events ' );
         assert.equal(true, data.search.total_items > 0);
-        
+
         for(var i in data.search.events[i]){
           assert.equal(true, data.search.events[i].title != null);
         }
@@ -28,12 +28,12 @@ describe('eventful-node', function(){
       });
     })
   })
-  
+
   describe("#listCategories", function (){
     it('should return a list of categories', function(done){
-    
+
       assert.equal(true, process.env.API_KEY != null, apiKeyMessage);
-    
+
       client.listCategories(function(err, data){
         console.log(err);
         assert.equal(true, (err == null));
@@ -47,7 +47,23 @@ describe('eventful-node', function(){
         }
         done();
       });
-    
+
+    });
+  });
+
+  describe("#getEvent", function (){
+    it('should return an event', function(done){
+      const DEMO_ID = "E0-001-000278174-6";
+      assert.equal(true, process.env.API_KEY != null, apiKeyMessage);
+
+      client.getEvent({
+        id: DEMO_ID
+      }, function(err, data) {
+        assert.ok(err == null);
+        assert.equal(data['$'].id, DEMO_ID);
+        done();
+      });
+
     });
   });
 })
