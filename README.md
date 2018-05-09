@@ -60,7 +60,7 @@ client.searchEvents({ keywords: 'music' }, function(err, data){
 
 ```
 
-## Getting Possible Event Cateogires
+## Getting Possible Event Categories
 
 ```js
   
